@@ -23,5 +23,7 @@ public class MarsRover {
             this.xCoordinate++;
         else if (this.facingDirection == 'W')
             this.xCoordinate--;
+        else if (this.facingDirection == 'S')
+            this.yCoordinate--;
     }
 }
