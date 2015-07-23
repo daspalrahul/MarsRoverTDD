@@ -30,5 +30,12 @@ public class MarsRover {
     public void turnLeft() {
         if (this.facingDirection == 'E')
             this.facingDirection = 'N';
+        else if (this.facingDirection == 'S')
+            this.facingDirection = 'E';
+        else if (this.facingDirection == 'N')
+            this.facingDirection = 'W';
+        else if (this.facingDirection == 'W')
+            this.facingDirection = 'S';
     }
 }
+
