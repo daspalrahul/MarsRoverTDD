@@ -12,6 +12,17 @@ public class RoverControlCenter {
     }
 
     public String locationOfRover() {
-        return new MarsRover(0, 2, 'N').location();
+        return marsRover.location();
+    }
+
+    public void driveRover() {
+        for (int i = 0; i < drivingInstructions.length(); i++) {
+            if (drivingInstructions.charAt(i) == 'M')
+                marsRover.move();
+            else if (drivingInstructions.charAt(i) == 'L')
+                marsRover.turnLeft();
+            else if (drivingInstructions.charAt(i) == 'R')
+                marsRover.turnRight();
+        }
     }
 }
