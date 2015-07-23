@@ -26,4 +26,9 @@ public class MarsRover {
         else if (this.facingDirection == 'S')
             this.yCoordinate--;
     }
+
+    public void turnLeft() {
+        if (this.facingDirection == 'E')
+            this.facingDirection = 'N';
+    }
 }
