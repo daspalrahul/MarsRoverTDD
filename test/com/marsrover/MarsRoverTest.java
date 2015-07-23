@@ -4,7 +4,6 @@ package com.marsrover;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-
 public class MarsRoverTest {
 
     @Test
