@@ -75,4 +75,13 @@ public class MarsRoverTest {
 
         assertEquals(new MarsRover(0, 0, 'S').location(), marsRover.location());
     }
+
+    @Test
+    public void marsRoverFacingSouthWhenTurnsRightFacesWest() {
+        MarsRover marsRover = new MarsRover(0, 0, 'S');
+
+        marsRover.turnRight();
+
+        assertEquals(new MarsRover(0, 0, 'W').location(), marsRover.location());
+    }
 }
