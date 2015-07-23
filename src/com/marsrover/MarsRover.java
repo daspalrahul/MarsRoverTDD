@@ -19,5 +19,7 @@ public class MarsRover {
     public void move() {
         if (this.facingDirection == 'N')
             this.yCoordinate++;
+        else if (this.facingDirection == 'E')
+            this.xCoordinate++;
     }
 }

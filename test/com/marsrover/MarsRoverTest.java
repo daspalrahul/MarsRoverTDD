@@ -21,4 +21,13 @@ public class MarsRoverTest {
 
         assertEquals(new MarsRover(0, 1, 'N').location(), marsRover.location());
     }
+
+    @Test
+    public void marsRoverAtZeroZeroFacingEastWhenMovesReachesOneZero() {
+        MarsRover marsRover = new MarsRover(0, 0, 'E');
+
+        marsRover.move();
+
+        assertEquals(new MarsRover(1, 0, 'E').location(), marsRover.location());
+    }
 }
