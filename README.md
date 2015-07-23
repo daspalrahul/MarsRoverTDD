@@ -29,7 +29,7 @@ The input of the application is initial coordinates of a rover, the dimension of
 Output
 ========
 
-The application will return the final coordinates of the rover and the direction it is facing.
+The application will return the final coordinates of the rover and the facingDirection it is facing.
 
 How to Run?
 ============
