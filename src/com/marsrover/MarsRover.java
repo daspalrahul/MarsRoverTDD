@@ -13,6 +13,11 @@ public class MarsRover {
     }
     
     public String location() {
-        return "Location " + xCoordinate + ", " + yCoordinate + " facing facingDirection " + facingDirection;
+        return "Location " + xCoordinate + ", " + yCoordinate + " facing direction " + facingDirection;
+    }
+
+    public void move() {
+        if (this.facingDirection == 'N')
+            this.yCoordinate++;
     }
 }
