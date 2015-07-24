@@ -17,12 +17,16 @@ public class RoverControlCenter {
 
     public void driveRover() {
         for (int i = 0; i < drivingInstructions.length(); i++) {
-            if (drivingInstructions.charAt(i) == 'M')
+            if (nextCommand(i) == 'M')
                 marsRover.move();
-            else if (drivingInstructions.charAt(i) == 'L')
+            else if (nextCommand(i) == 'L')
                 marsRover.turnLeft();
-            else if (drivingInstructions.charAt(i) == 'R')
+            else if (nextCommand(i) == 'R')
                 marsRover.turnRight();
         }
+    }
+
+    private char nextCommand(int i) {
+        return drivingInstructions.charAt(i);
     }
 }
